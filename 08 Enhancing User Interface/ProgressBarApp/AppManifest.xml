@@ -4,7 +4,7 @@
      Name="ProgressBarApp"
      ProductID="{55d2f058-df71-4ca8-8e46-d83c398fe0c1}"
      Version="1.0.0.0"
-     SharePointMinVersion="15.0.0.0"
+     SharePointMinVersion="16.0.0.0"
 >
   <Properties>
     <Title>ProgressBarApp</Title>

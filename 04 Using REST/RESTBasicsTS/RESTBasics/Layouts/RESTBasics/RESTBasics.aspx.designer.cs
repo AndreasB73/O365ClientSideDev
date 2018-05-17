@@ -10,7 +10,7 @@
 namespace RESTBasics.Layouts.RESTBasics {
     
     
-    public partial class RESTDemos {
+    public partial class RESTBasics {
         
         /// <summary>
         /// jquery control.

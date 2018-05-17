@@ -15,7 +15,9 @@ Import-PSSession $exchangeSession -DisableNameChecking
 $ccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $credential -Authentication Basic -AllowRedirection
 Import-PSSession $ccSession -Prefix cc
 
-$siteurl = https://integrationsonline.sharepoint.com/sites/spdevtest/
+Import-Module MsOnline
+$credential = Get-Credential
+$siteurl = "https://bachmaier.sharepoint.com/sites/ClientDev"
 
 #Connect to a site in your tennant
 Connect-SPOnline -url $siteurl -Credentials $credential

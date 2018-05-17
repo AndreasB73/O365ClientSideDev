@@ -1,6 +1,6 @@
-$adminUrl = "https://integrationsonline-admin.sharepoint.com"
-$hubSiteUrl = "https://integrationsonline.sharepoint.com/sites/learning"
-$user = "alexander.pajer@integrations.at"
+$adminUrl = "https://bachmaier-admin.sharepoint.com"
+$hubSiteUrl = "https://bachmaier.sharepoint.com/sites/learning"
+$user = "andreas@bachmaier.onmicrosoft.com"
 
 Connect-PnPOnline -Url $adminUrl 
 
@@ -16,7 +16,7 @@ Set-SPOHubSite -Identity $hubSiteUrl -LogoUrl $hubSiteUrl"/SiteAssets/learning.p
 
 Grant-SPOHubSiteRights -Identity $hubSiteUrl -Principals $user -Rights Join
 
-Add-SPOHubSiteAssociation -Site https://integrationsonline.sharepoint.com/sites/training -HubSite https://integrationsonline.sharepoint.com/sites/learning 
+Add-SPOHubSiteAssociation -Site https://bachmaier.sharepoint.com/sites/training -HubSite https://bachmaier.sharepoint.com/sites/learning 
 
 
 ## Site Types: TeamSite | CommunicationSite

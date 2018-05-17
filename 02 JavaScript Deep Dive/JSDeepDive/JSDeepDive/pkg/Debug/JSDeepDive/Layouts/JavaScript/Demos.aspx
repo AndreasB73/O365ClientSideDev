@@ -1,4 +1,4 @@
-<%@ Assembly Name="JSDeepDive, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b0f6f371fbc8f60b" %>
+﻿<%@ Assembly Name="JSDeepDive, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b0f6f371fbc8f60b" %>
 <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
 <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
@@ -11,7 +11,7 @@
     <script src="lib/jquery/jquery-3.1.1.min.js"></script>
     <script src="lib/moment/moment.js"></script>
     <script src="demos.aspx.js"></script>   
-    <script src="bundle/bundle.js"></script>
+    <%--<script src="bundle/bundle.js"></script>--%>
     <SharePoint:CssRegistration runat="server" ID="CssRegistration1" Name="/_layouts/15/JavaScript/css/demo.css" After="corev15.css"/>  
 </asp:Content>
 

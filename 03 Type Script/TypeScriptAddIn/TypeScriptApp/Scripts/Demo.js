@@ -142,6 +142,7 @@ function arrayHelpers() {
     fruits.forEach(fruit => {
         fruit.quantity++;
     });
+    fruits.forEach($0 => $0.quantity++);
     //find
     var cherry = fruits.find(fruit => fruit.name === "cherries");
     console.log(cherry);

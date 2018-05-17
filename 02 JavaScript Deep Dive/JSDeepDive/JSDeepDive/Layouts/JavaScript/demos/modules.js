@@ -12,7 +12,7 @@ debugger;
         sayName: function () {
             console.log("Hi, i am " + this.name);
         }
-    }
+    } 
 
     debugger;
     Person.init("Josef");

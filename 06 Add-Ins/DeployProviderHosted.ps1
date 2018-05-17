@@ -8,9 +8,9 @@ if ((Get-PSSnapin "Microsoft.SharePoint.PowerShell" -ErrorAction SilentlyContinu
 
 $site = "http://sp2016"
 $appName = "ProviderHostedAddIn"
-$issuerId = "2ffbee9b-3a1f-4d7e-b673-866ffa549d27"
-$appFile = "D:\Classes\O365ClientSideDev\06 Add-Ins\ProviderHostedAddIn\ProviderHostedAddIn\bin\Debug\app.publish\1.0.0.0\ProviderHostedAddIn.app"
-
+$clientId = "3d446ebd-324b-443b-b53a-398fd20c878e"
+$appFile = "D:\O365ClientSideDev\06 Add-Ins\ProviderHostedAddIn\ProviderHostedAddIn\bin\Release\app.publish\1.0.0.1\ProviderHostedAddIn.app"
+         
 $web = Get-SPWeb -Identity $site
 $realm = Get-SPAuthenticationRealm -ServiceContext $web.Site;
 $appIdentifier = $issuerId  + '@' + $realm;
@@ -33,7 +33,7 @@ exit
 $Url = "http://sp2016"
 $web = Get-SPWeb -Identity $Url
 $realm = Get-SPAuthenticationRealm -ServiceContext $web.Site;
-$appIdentifier = $issuerId  + '@' + $realm;
+$appIdentifier = $clientId  + '@' + $realm;
 Get-SPAppPrincipal -NameIdentifier $appIdentifier -Site $Url
 
 exit

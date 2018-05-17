@@ -1,7 +1,9 @@
-﻿
+﻿//# sourceURL=objectOrientation.js
+
 function firstObject() {
     debugger;
 
+    // alte Methode
     var student = new Object;
     student.name = "Homer Simpson";
     student.grade = 3;

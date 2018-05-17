@@ -1,4 +1,4 @@
-﻿(function () {
+﻿ (function () {
     // Initialize the variable that store the overrides objects.
     var overrideCtx = {};
     overrideCtx.Templates = {};

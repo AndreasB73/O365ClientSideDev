@@ -5,15 +5,15 @@ $(document).ready(function () {
     // Assign variables
     var params = {
         // Domain of Azure AD tenant
-        azureAD: "integrations.at",
+        azureAD: "bachmaier.onmicrosoft.com",
         // ClientId of Azure AD application principal
-        clientId: "4e60c128-a813-4031-bd99-cf4327cce885",
+        clientId: "b66efdc3-1eb8-4f8a-b09f-85976fbf2325",
         // Name of SharePoint tenant
-        sharePointTenant: "integrationsonline",
+        sharePointTenant: "bachmaier",
         // Endpoints you like to call
         endPoints: {
             graphApiUri: "https://graph.microsoft.com",
-            sharePointUri: "https://integrationsonline.sharepoint.com"
+            sharePointUri: "https://bachmaier.sharepoint.com"
         }
     }
 

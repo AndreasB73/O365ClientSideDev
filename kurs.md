@@ -1,5 +1,8 @@
 # Kurs-Infos
 
+## CSS
+
+[Flexbox Playground](https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/)
 
 ## Javascript
 

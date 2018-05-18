@@ -11,8 +11,14 @@ import * as strings from 'SharePointListsWebPartStrings';
 import SharePointLists from './components/SharePointLists';
 import { ISharePointListsProps } from './components/ISharePointListsProps';
 
+require('sp-init');
+require('microsoft-ajax');
+require('sp-runtime');
+require('sharepoint');
+
 export interface ISharePointListsWebPartProps {
   description: string;
+  siteUrl: string;
 }
 
 export default class SharePointListsWebPart extends BaseClientSideWebPart<ISharePointListsWebPartProps> {
@@ -21,7 +27,8 @@ export default class SharePointListsWebPart extends BaseClientSideWebPart<IShare
     const element: React.ReactElement<ISharePointListsProps > = React.createElement(
       SharePointLists,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        siteUrl: this.context.pageContext.web.absoluteUrl
       }
     );
 

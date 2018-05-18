@@ -1,6 +1,6 @@
 {
   "$schema": "https://dev.office.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "d56dd4fd-f965-445e-b24e-6b1d89f4568d",
+  "id": "804b6620-0882-4863-9da9-f50ee31b1110",
   "alias": "SharePointListsWebPart",
   "componentType": "WebPart",
 
@@ -16,11 +16,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "sharePointLists" },
-    "description": { "default": "sharePointLists description" },
+    "title": { "default": "SharePointLists" },
+    "description": { "default": "SharePoint lists description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "sharePointLists"
+      "description": "SharePointLists"
     }
   }]
 }

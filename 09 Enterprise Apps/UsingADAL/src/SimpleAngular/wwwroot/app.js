@@ -2,8 +2,8 @@
 
     var config = {
         instance: 'https://login.microsoftonline.com/',
-        tenant: 'integrationsonline.onmicrosoft.com',
-        clientId: '4e60c128-a813-4031-bd99-cf4327cce885',
+        tenant: 'bachmaier.onmicrosoft.com',
+        clientId: 'b66efdc3-1eb8-4f8a-b09f-85976fbf2325',
         postLogoutRedirectUri: window.location.origin,
         endpoints:{
             'graph': 'https://graph.microsoft.com'
